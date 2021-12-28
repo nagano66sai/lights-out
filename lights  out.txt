@@ -1,0 +1,64 @@
+10進basicを使っています
+
+
+
+
+DIM a(9,9)
+DIM   b(9,9)
+DIM   c(9)
+DIM  d(9)
+
+MAT  a=ZER
+LET a(1,1)=1
+LET a(1,2)=1
+LET a(1,4)=1
+LET a(2,1)=1
+LET a(2,2)=1
+LET a(2,3)=1
+LET a(2,5)=1
+LET a(3,2)=1
+LET a(3,3)=1
+LET a(3,6)=1
+LET a(4,1)=1
+LET a(4,4)=1
+LET a(4,5)=1
+LET a(4,7)=1
+LET a(5,2)=1
+LET a(5,4)=1
+LET a(5,5)=1
+LET a(5,6)=1
+LET a(5,8)=1
+LET a(6,3)=1
+LET a(6,5)=1
+LET a(6,6)=1
+LET a(6,9)=1
+LET a(7,4)=1
+LET a(7,7)=1
+LET a(7,8)=1
+LET a(8,5)=1
+LET a(8,7)=1
+LET a(8,8)=1
+LET a(8,9)=1
+LET a(9,6)=1
+LET a(9,8)=1
+LET a(9,9)=1
+MAT   b=INV(a)
+LET c(1)=1
+LET c(2)=1
+LET c(3)=0
+LET c(4)=0
+LET c(5)=0
+LET c(6)=0
+LET c(7)=1
+LET c(8)=0
+LET c(9)=0
+MAT  d=b*c
+
+LET g=DET(a)
+DIM   h(9)
+MAT  h=g*d
+FOR   k=1  TO  9
+
+   PRINT MOD( h(k),2)
+NEXT K
+END
