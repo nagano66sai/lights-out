@@ -1,6 +1,6 @@
-10進basicを使っています
+rem  by   using    decimal  basic
 
-
+rem  english version  download  from  https://decimalbasic.ninja-web.net/EnglishInstallerWin.htm
 
 
 DIM a(9,9)
